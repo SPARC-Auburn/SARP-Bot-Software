@@ -1,0 +1,8 @@
+prefix=/home/sparc/SARP-Bot-Software/catkin_ws/install
+
+Name: differential_drive
+Description: Description of differential_drive
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/sparc/SARP-Bot-Software/catkin_ws/install/lib 
+Requires: 

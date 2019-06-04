@@ -7,40 +7,58 @@
 
 #include <Cytron_SmartDriveDuo.h>
 #include <ros.h>
-#include <std_msgs/UInt16.h>
+#include <math.h>
+#include <std_msgs/Int8.h>
+#include <SoftwareSerial.h>
 
 // Constants
 #define IN1 4 // Arduino pin 4 is connected to MDDS60 pin IN1.
 #define MOTOR_CONTROLLER_BAUDRATE  9600
-#define leftDrivePolarity -1
-#define rightDrivePolarity -1
+#define ROS_BAUDRATE 57600
+#define LEFT_DRIVE_POLARITY -1
+#define RIGHT_DRIVE_POLARITY -1
 
 // Variables
-signed char leftDriveSpeed;
-signed char rightDriveSpeed;
+float leftDriveSpeed = 0;
+float rightDriveSpeed = 0;
 
-ros::NodeHandle  nh;
-
+// Setup Motor Controller
 Cytron_SmartDriveDuo smartDriveDuo30(SERIAL_SIMPLFIED, IN1, MOTOR_CONTROLLER_BAUDRATE);
 
+// Setup ROS Communication
+SoftwareSerial portROS(0, 1);
+ros::NodeHandle nh;
 
-void servo_cb( const std_msgs::UInt16& cmd_msg){
-  smartDriveDuo30.control(0,int(cmd_msg.data)); //set servo angle, should be from 0-180  
-  digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
+// Update values from ROS
+void leftDriveCallback(const std_msgs::Int8& leftDrive) 
+{
+  leftDriveSpeed = int(leftDrive.data);  
+  smartDriveDuo30.control(leftDriveSpeed*LEFT_DRIVE_POLARITY,rightDriveSpeed*RIGHT_DRIVE_POLARITY); 
 }
 
-ros::Subscriber<std_msgs::UInt16> sub("servo", servo_cb);
+void rightDriveCallback(const std_msgs::Int8& rightDrive) 
+{
+  rightDriveSpeed = int(rightDrive.data);
+  smartDriveDuo30.control(leftDriveSpeed*LEFT_DRIVE_POLARITY,rightDriveSpeed*RIGHT_DRIVE_POLARITY); 
+}
+
+ros::Subscriber<std_msgs::Int8> lsubscriber("lmotor_cmd", leftDriveCallback);
+ros::Subscriber<std_msgs::Int8> rsubscriber("rmotor_cmd", rightDriveCallback);
+
 
 // Setup serial and pin states
 void setup()
 {
-  pinMode(13, OUTPUT);
+  portROS.begin(ROS_BAUDRATE);
   nh.initNode();
-  nh.subscribe(sub);
+  nh.subscribe(lsubscriber);
+  nh.subscribe(rsubscriber);
+  delay(2000);
 }
 
 void loop()
 {
   nh.spinOnce();
   delay(1);
+  
 }

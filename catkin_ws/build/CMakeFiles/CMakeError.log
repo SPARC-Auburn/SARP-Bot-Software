@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7c758/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7c758.dir/build.make CMakeFiles/cmTC_7c758.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_12a60/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12a60.dir/build.make CMakeFiles/cmTC_12a60.dir/build
 make[1]: Entering directory '/home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7c758.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_7c758.dir/CheckSymbolExists.c.o   -c /home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_7c758
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c758.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7c758.dir/CheckSymbolExists.c.o  -o cmTC_7c758 
-CMakeFiles/cmTC_7c758.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_12a60.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_12a60.dir/CheckSymbolExists.c.o   -c /home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_12a60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12a60.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_12a60.dir/CheckSymbolExists.c.o  -o cmTC_12a60 
+CMakeFiles/cmTC_12a60.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7c758.dir/build.make:97: recipe for target 'cmTC_7c758' failed
-make[1]: *** [cmTC_7c758] Error 1
+CMakeFiles/cmTC_12a60.dir/build.make:97: recipe for target 'cmTC_12a60' failed
+make[1]: *** [cmTC_12a60] Error 1
 make[1]: Leaving directory '/home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7c758/fast' failed
-make: *** [cmTC_7c758/fast] Error 2
+Makefile:126: recipe for target 'cmTC_12a60/fast' failed
+make: *** [cmTC_12a60/fast] Error 2
 
 File /home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_36c7c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_36c7c.dir/build.make CMakeFiles/cmTC_36c7c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_71c6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71c6b.dir/build.make CMakeFiles/cmTC_71c6b.dir/build
 make[1]: Entering directory '/home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_36c7c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_36c7c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_36c7c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36c7c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_36c7c.dir/CheckFunctionExists.c.o  -o cmTC_36c7c -lpthreads 
+Building C object CMakeFiles/cmTC_71c6b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_71c6b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71c6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71c6b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_71c6b.dir/CheckFunctionExists.c.o  -o cmTC_71c6b -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_36c7c.dir/build.make:97: recipe for target 'cmTC_36c7c' failed
-make[1]: *** [cmTC_36c7c] Error 1
+CMakeFiles/cmTC_71c6b.dir/build.make:97: recipe for target 'cmTC_71c6b' failed
+make[1]: *** [cmTC_71c6b] Error 1
 make[1]: Leaving directory '/home/sparc/SARP-Bot-Software/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_36c7c/fast' failed
-make: *** [cmTC_36c7c/fast] Error 2
+Makefile:126: recipe for target 'cmTC_71c6b/fast' failed
+make: *** [cmTC_71c6b/fast] Error 2
 
 

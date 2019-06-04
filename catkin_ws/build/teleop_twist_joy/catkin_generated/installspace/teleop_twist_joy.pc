@@ -1,0 +1,8 @@
+prefix=/home/sparc/SARP-Bot-Software/catkin_ws/install
+
+Name: teleop_twist_joy
+Description: Description of teleop_twist_joy
+Version: 0.1.3
+Cflags: -I/home/sparc/SARP-Bot-Software/catkin_ws/install/include
+Libs: -L/home/sparc/SARP-Bot-Software/catkin_ws/install/lib -lteleop_twist_joy
+Requires: geometry_msgs roscpp sensor_msgs

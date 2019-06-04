@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD="/home/sparc/SARP-Bot-Software/catkin_ws/build"
-export PYTHONPATH="/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
