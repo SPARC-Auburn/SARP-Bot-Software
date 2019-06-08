@@ -263,6 +263,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
+
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
@@ -309,7 +312,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=sparc-NUC8i5BEH
+SITE:STRING=nuc
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -331,6 +334,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
+
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
@@ -420,6 +426,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/librostime.so
 
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
+
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 
@@ -428,6 +437,12 @@ message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//Value Computed by CMake
+odometry_publisher_BINARY_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/build/odometry_publisher
+
+//Value Computed by CMake
+odometry_publisher_SOURCE_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/src/odometry_publisher
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -441,6 +456,9 @@ roscpp_serialization_DIR:PATH=/opt/ros/melodic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 
@@ -449,6 +467,9 @@ roslaunch_DIR:PATH=/opt/ros/melodic/share/roslaunch/cmake
 
 //The directory containing a CMake configuration file for roslint.
 roslint_DIR:PATH=/opt/ros/melodic/share/roslint/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
 //Value Computed by CMake
 rosserial_BINARY_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial
@@ -566,6 +587,21 @@ teleop_twist_joy_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;ge
 
 //Value Computed by CMake
 teleop_twist_joy_SOURCE_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/src/teleop_twist_joy
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/melodic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 
 //The directory containing a CMake configuration file for topic_tools.
 topic_tools_DIR:PATH=/opt/ros/melodic/share/topic_tools/cmake
@@ -711,7 +747,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

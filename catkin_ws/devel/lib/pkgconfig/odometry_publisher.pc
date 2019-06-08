@@ -1,0 +1,8 @@
+prefix=/home/sparc/SARP-Bot-Software/catkin_ws/devel
+
+Name: odometry_publisher
+Description: Description of odometry_publisher
+Version: 0.2.3
+Cflags: 
+Libs: -L/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib 
+Requires: 

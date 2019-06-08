@@ -1,4 +1,5 @@
 sleep 1
 roslaunch test.launch &
-roslaunch teleop.launch
+roslaunch teleop.launch &
+rosrun rosserial_python serial_node.py /dev/ttyUSB0
 echo "Use L shoulder button on controller to enable driving.  Use R shoulder button for turbo mode."

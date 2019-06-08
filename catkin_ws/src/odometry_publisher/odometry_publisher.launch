@@ -1,0 +1,5 @@
+<launch>
+    <node name="odometry_publisher" pkg="odometry_publisher" type="odometry_publisher" />
+    <param name="baseWidth" value="0.09"/>    
+    <param name="wheelRadius" value="0.03825"/>
+</launch>
