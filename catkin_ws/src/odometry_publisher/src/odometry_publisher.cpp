@@ -37,7 +37,7 @@
 #include <ros/ros.h>
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
-#include "std_msgs/Int32.h"
+#include "std_msgs/Int16.h"
 #include "deadreckon.h"
 #define ticksPerRev 210.461538 //ticks per rev is a double to the possibility of non whole number gear ratios due to how the encdoers are coupled
 #define pi 3.141592
@@ -46,11 +46,11 @@
 double baseWidth;
 double wheelRadius;
 int rightCount=bad,leftCount=bad;
-void rin(const std_msgs::Int32ConstPtr &msg){
+void rin(const std_msgs::Int16ConstPtr &msg){
         rightCount = msg->data;
 }
 
-void lin(const std_msgs::Int32ConstPtr &msg){
+void lin(const std_msgs::Int16ConstPtr &msg){
         leftCount = msg->data;
 }
 
@@ -60,8 +60,8 @@ int main(int argc, char** argv){
   n.getParam("baseWidth", baseWidth);
   n.getParam("wheelRadius", wheelRadius);
   ros::Publisher odom_pub = n.advertise<nav_msgs::Odometry>("poll/odom", 1);
-  ros::Subscriber lsub = n.subscribe<std_msgs::Int32>("lwheel",1,lin);
-  ros::Subscriber rsub = n.subscribe<std_msgs::Int32>("rwheel",1,rin);
+  ros::Subscriber lsub = n.subscribe<std_msgs::Int16>("lwheel",1,lin);
+  ros::Subscriber rsub = n.subscribe<std_msgs::Int16>("rwheel",1,rin);
 //  tf::TransformBroadcaster odom_broadcaster;
 
   odomIntegral odomI(baseWidth,wheelRadius);//base and radius in meters. TODO get accurate values here

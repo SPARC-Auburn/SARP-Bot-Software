@@ -294,7 +294,7 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
+PYTHON_EXECUTABLE:FILEPATH=/home/sparc/.platformio/penv/bin/python2
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=2
@@ -348,10 +348,10 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
-differential_drive_BINARY_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/build/differential-drive
+differential_drive_BINARY_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/build/differential_drive
 
 //Value Computed by CMake
-differential_drive_SOURCE_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/src/differential-drive
+differential_drive_SOURCE_DIR:STATIC=/home/sparc/SARP-Bot-Software/catkin_ws/src/differential_drive
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
@@ -789,7 +789,7 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.15()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/home/sparc/.platformio/penv/bin/python2][v2.7.15()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE

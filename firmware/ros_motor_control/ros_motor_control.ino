@@ -8,7 +8,7 @@
 #include <Cytron_SmartDriveDuo.h>
 #include <ros.h>
 #include <math.h>
-#include <std_msgs/Int8.h>
+#include <std_msgs/Float32.h>
 #include <SoftwareSerial.h>
 
 // Constants
@@ -30,20 +30,20 @@ SoftwareSerial portROS(0, 1);
 ros::NodeHandle nh;
 
 // Update values from ROS
-void leftDriveCallback(const std_msgs::Int8& leftDrive) 
+void leftDriveCallback(const std_msgs::Float32& leftDrive) 
 {
   leftDriveSpeed = int(leftDrive.data);  
   smartDriveDuo30.control(leftDriveSpeed*LEFT_DRIVE_POLARITY,rightDriveSpeed*RIGHT_DRIVE_POLARITY); 
 }
 
-void rightDriveCallback(const std_msgs::Int8& rightDrive) 
+void rightDriveCallback(const std_msgs::Float32& rightDrive) 
 {
   rightDriveSpeed = int(rightDrive.data);
   smartDriveDuo30.control(leftDriveSpeed*LEFT_DRIVE_POLARITY,rightDriveSpeed*RIGHT_DRIVE_POLARITY); 
 }
 
-ros::Subscriber<std_msgs::Int8> lsubscriber("lmotor_cmd", leftDriveCallback);
-ros::Subscriber<std_msgs::Int8> rsubscriber("rmotor_cmd", rightDriveCallback);
+ros::Subscriber<std_msgs::Float32> lsubscriber("lmotor_cmd", leftDriveCallback);
+ros::Subscriber<std_msgs::Float32> rsubscriber("rmotor_cmd", rightDriveCallback);
 
 
 // Setup serial and pin states
@@ -59,6 +59,5 @@ void setup()
 void loop()
 {
   nh.spinOnce();
-  delay(1);
-  
+  delay(1);  
 }

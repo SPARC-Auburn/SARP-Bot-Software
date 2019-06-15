@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sparc/SARP-Bot-Software/catkin_ws/build
 include rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/progress.make
 
 rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test:
-	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial_test && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_test
+	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial_test && /home/sparc/.platformio/penv/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_test
 
 clean_test_results_rosserial_test: rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test
 clean_test_results_rosserial_test: rosserial/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make

@@ -6,6 +6,6 @@ pkg_name = "rosserial_msgs"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
 dep_include_paths_str = "rosserial_msgs;/home/sparc/SARP-Bot-Software/catkin_ws/src/rosserial/rosserial_msgs/msg"
-PYTHON_EXECUTABLE = "/usr/bin/python2"
+PYTHON_EXECUTABLE = "/home/sparc/.platformio/penv/bin/python2"
 package_has_static_sources = '' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

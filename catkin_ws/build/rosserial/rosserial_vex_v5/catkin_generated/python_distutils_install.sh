@@ -25,7 +25,7 @@ echo_and_run mkdir -p "$DESTDIR/home/sparc/SARP-Bot-Software/catkin_ws/install/l
 echo_and_run /usr/bin/env \
     PYTHONPATH="/home/sparc/SARP-Bot-Software/catkin_ws/install/lib/python2.7/dist-packages:/home/sparc/SARP-Bot-Software/catkin_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
     CATKIN_BINARY_DIR="/home/sparc/SARP-Bot-Software/catkin_ws/build" \
-    "/usr/bin/python2" \
+    "/home/sparc/.platformio/penv/bin/python2" \
     "/home/sparc/SARP-Bot-Software/catkin_ws/src/rosserial/rosserial_vex_v5/setup.py" \
     build --build-base "/home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial_vex_v5" \
     install \

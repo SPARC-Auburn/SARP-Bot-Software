@@ -19,8 +19,8 @@ tf/transform_broadcaster.h
 -
 nav_msgs/Odometry.h
 -
-std_msgs/Int32.h
-/home/sparc/SARP-Bot-Software/catkin_ws/src/odometry_publisher/src/std_msgs/Int32.h
+std_msgs/Int16.h
+/home/sparc/SARP-Bot-Software/catkin_ws/src/odometry_publisher/src/std_msgs/Int16.h
 deadreckon.h
 /home/sparc/SARP-Bot-Software/catkin_ws/src/odometry_publisher/src/deadreckon.h
 
@@ -972,7 +972,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/opt/ros/melodic/include/std_msgs/Int32.h
+/opt/ros/melodic/include/std_msgs/Int16.h
 string
 -
 vector

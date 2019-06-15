@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sparc/SARP-Bot-Software/catkin_ws/build
 include teleop_twist_joy/CMakeFiles/run_tests_teleop_twist_joy_roslint_package.dir/progress.make
 
 teleop_twist_joy/CMakeFiles/run_tests_teleop_twist_joy_roslint_package:
-	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy/roslint-teleop_twist_joy.xml --working-dir /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy "/opt/ros/melodic/share/roslint/cmake/../../../lib/roslint/test_wrapper /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy/roslint-teleop_twist_joy.xml make roslint_teleop_twist_joy"
+	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy && ../catkin_generated/env_cached.sh /home/sparc/.platformio/penv/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy/roslint-teleop_twist_joy.xml --working-dir /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy "/opt/ros/melodic/share/roslint/cmake/../../../lib/roslint/test_wrapper /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy/roslint-teleop_twist_joy.xml make roslint_teleop_twist_joy"
 
 run_tests_teleop_twist_joy_roslint_package: teleop_twist_joy/CMakeFiles/run_tests_teleop_twist_joy_roslint_package
 run_tests_teleop_twist_joy_roslint_package: teleop_twist_joy/CMakeFiles/run_tests_teleop_twist_joy_roslint_package.dir/build.make

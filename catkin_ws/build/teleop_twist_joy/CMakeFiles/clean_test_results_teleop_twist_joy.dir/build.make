@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sparc/SARP-Bot-Software/catkin_ws/build
 include teleop_twist_joy/CMakeFiles/clean_test_results_teleop_twist_joy.dir/progress.make
 
 teleop_twist_joy/CMakeFiles/clean_test_results_teleop_twist_joy:
-	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy
+	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/teleop_twist_joy && /home/sparc/.platformio/penv/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/teleop_twist_joy
 
 clean_test_results_teleop_twist_joy: teleop_twist_joy/CMakeFiles/clean_test_results_teleop_twist_joy
 clean_test_results_teleop_twist_joy: teleop_twist_joy/CMakeFiles/clean_test_results_teleop_twist_joy.dir/build.make

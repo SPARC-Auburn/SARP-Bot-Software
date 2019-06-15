@@ -70,7 +70,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_arduino")
+  execute_process(COMMAND "/home/sparc/.platformio/penv/bin/python2" -m compileall "/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_arduino")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sparc/SARP-Bot-Software/catkin_ws/build
 include rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/progress.make
 
 rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test:
-	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial_client && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml "/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib/rosserial_client/subscriber_test --gtest_output=xml:/home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml"
+	cd /home/sparc/SARP-Bot-Software/catkin_ws/build/rosserial/rosserial_client && ../../catkin_generated/env_cached.sh /home/sparc/.platformio/penv/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml "/home/sparc/SARP-Bot-Software/catkin_ws/devel/lib/rosserial_client/subscriber_test --gtest_output=xml:/home/sparc/SARP-Bot-Software/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml"
 
 run_tests_rosserial_client_gtest_subscriber_test: rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test
 run_tests_rosserial_client_gtest_subscriber_test: rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build.make
